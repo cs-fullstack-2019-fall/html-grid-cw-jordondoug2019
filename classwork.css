@@ -1,0 +1,53 @@
+#container{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: ". header header header"
+                          ". section2 section2 section2"
+                          ". article article aside"
+                           ". footer footer footer";
+    grid-gap:10px;
+    padding-top: 30px;
+    font-family: Arial;
+}
+#header{
+    grid-area: header;
+    background-color: lightgrey;
+    height: 100px;
+
+
+}
+#section2{
+    grid-area: section2;
+    background-color: blue;
+}
+#article{
+    grid-area: article;
+    background-color: lightgrey;
+
+}
+#aside{
+    grid-area: aside;
+    background-color: lightgrey;
+    height: 200px;
+}
+#footer{
+    grid-area: footer;
+    background-color: lightgrey;
+    height: 100px;
+}
+h3{
+    display:inline-block;
+    text-decoration-line: underline;
+    color:white;
+    position: relative;
+    left:7px;
+}
+h2{
+    position: relative;
+    left:7px;
+}
+p{
+    position: relative;
+    left:7px;
+}
